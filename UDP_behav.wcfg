@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_TOP_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_TOP" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="3007034000fs"></ZoomStartTime>
+      <ZoomEndTime time="4350538133fs"></ZoomEndTime>
+      <Cursor1Time time="6767034000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="192"></NameColumnWidth>
+      <ValueColumnWidth column_width="109"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="55" />
+   <wave_markers>
+      <marker label="" time="32952830000" />
+      <marker label="" time="216326000000" />
+   </wave_markers>
+   <wvobject fp_name="divider228" type="divider">
+      <obj_property name="label">top/</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/CPU_RSTN">
+      <obj_property name="ElementShortName">CPU_RSTN</obj_property>
+      <obj_property name="ObjectShortName">CPU_RSTN</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/SYSCLK">
+      <obj_property name="ElementShortName">SYSCLK</obj_property>
+      <obj_property name="ObjectShortName">SYSCLK</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/SW">
+      <obj_property name="ElementShortName">SW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider231" type="divider">
+      <obj_property name="label">top/etherRx</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/ETH_RXCK">
+      <obj_property name="ElementShortName">ETH_RXCK</obj_property>
+      <obj_property name="ObjectShortName">ETH_RXCK</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/ETH_RXD">
+      <obj_property name="ElementShortName">ETH_RXD[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ETH_RXD[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/ETH_RXCTL">
+      <obj_property name="ElementShortName">ETH_RXCTL</obj_property>
+      <obj_property name="ObjectShortName">ETH_RXCTL</obj_property>
+      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/gmii_rxctl_hi">
+      <obj_property name="ElementShortName">gmii_rxctl_hi</obj_property>
+      <obj_property name="ObjectShortName">gmii_rxctl_hi</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/gmii_rxctl_lo">
+      <obj_property name="ElementShortName">gmii_rxctl_lo</obj_property>
+      <obj_property name="ObjectShortName">gmii_rxctl_lo</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/eth_rxck">
+      <obj_property name="ElementShortName">eth_rxck</obj_property>
+      <obj_property name="ObjectShortName">eth_rxck</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/eth_clkgen_locked">
+      <obj_property name="ElementShortName">eth_clkgen_locked</obj_property>
+      <obj_property name="ObjectShortName">eth_clkgen_locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider236" type="divider">
+      <obj_property name="label">top/etherTx</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/gmii_txctl">
+      <obj_property name="ElementShortName">gmii_txctl</obj_property>
+      <obj_property name="ObjectShortName">gmii_txctl</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/gmii_txd">
+      <obj_property name="ElementShortName">gmii_txd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">gmii_txd[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/gmii_rxd">
+      <obj_property name="ElementShortName">gmii_rxd[7:0]</obj_property>
+      <obj_property name="ObjectShortName">gmii_rxd[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/gmii_rxctl">
+      <obj_property name="ElementShortName">gmii_rxctl</obj_property>
+      <obj_property name="ObjectShortName">gmii_rxctl</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group308">
+      <obj_property name="label">top/Rarbiter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/nx">
+         <obj_property name="ElementShortName">nx[3:0]</obj_property>
+         <obj_property name="ObjectShortName">nx[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/st">
+         <obj_property name="ElementShortName">st[3:0]</obj_property>
+         <obj_property name="ObjectShortName">st[3:0]</obj_property>
+         <obj_property name="CustomSignalColor">#A0A0A4</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/my_MACadd">
+         <obj_property name="ElementShortName">my_MACadd[47:0]</obj_property>
+         <obj_property name="ObjectShortName">my_MACadd[47:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/my_IPadd">
+         <obj_property name="ElementShortName">my_IPadd[31:0]</obj_property>
+         <obj_property name="ObjectShortName">my_IPadd[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/is_arp">
+         <obj_property name="ElementShortName">is_arp</obj_property>
+         <obj_property name="ObjectShortName">is_arp</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/rx_ip4_dstIP">
+         <obj_property name="ElementShortName">rx_ip4_dstIP[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_ip4_dstIP[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/rx_dstMAC">
+         <obj_property name="ElementShortName">rx_dstMAC[47:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_dstMAC[47:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/rx_srcIP">
+         <obj_property name="ElementShortName">rx_srcIP[31:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_srcIP[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/rx_srcMAC">
+         <obj_property name="ElementShortName">rx_srcMAC[47:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_srcMAC[47:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/dstmac_is_bcast">
+         <obj_property name="ElementShortName">dstmac_is_bcast</obj_property>
+         <obj_property name="ObjectShortName">dstmac_is_bcast</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/dstmac_is_me">
+         <obj_property name="ElementShortName">dstmac_is_me</obj_property>
+         <obj_property name="ObjectShortName">dstmac_is_me</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/FCS">
+         <obj_property name="ElementShortName">FCS[31:0]</obj_property>
+         <obj_property name="ObjectShortName">FCS[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/CRC">
+         <obj_property name="ElementShortName">CRC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">CRC[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/r_crc">
+         <obj_property name="ElementShortName">r_crc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_crc[31:0]</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/FCS_correct">
+         <obj_property name="ElementShortName">FCS_correct</obj_property>
+         <obj_property name="ObjectShortName">FCS_correct</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/rxend_cnt">
+         <obj_property name="ElementShortName">rxend_cnt[3:0]</obj_property>
+         <obj_property name="ObjectShortName">rxend_cnt[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/crc_ok">
+         <obj_property name="ElementShortName">crc_ok</obj_property>
+         <obj_property name="ObjectShortName">crc_ok</obj_property>
+         <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/arp_st">
+         <obj_property name="ElementShortName">arp_st[2:0]</obj_property>
+         <obj_property name="ObjectShortName">arp_st[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="divider335" type="divider">
+         <obj_property name="label">crc</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group346">
+         <obj_property name="label">crc</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/crc_ge/reset">
+            <obj_property name="ElementShortName">reset</obj_property>
+            <obj_property name="ObjectShortName">reset</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/crc_ge/overflow">
+            <obj_property name="ElementShortName">overflow</obj_property>
+            <obj_property name="ObjectShortName">overflow</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/crc_ge/i">
+            <obj_property name="ElementShortName">i[31:0]</obj_property>
+            <obj_property name="ObjectShortName">i[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/crc_ge/flg">
+            <obj_property name="ElementShortName">flg</obj_property>
+            <obj_property name="ObjectShortName">flg</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/crc_ge/d">
+            <obj_property name="ElementShortName">d[7:0]</obj_property>
+            <obj_property name="ObjectShortName">d[7:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/crc_ge/CRC_1">
+            <obj_property name="ElementShortName">CRC_1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">CRC_1[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/crc_ge/CRC_0">
+            <obj_property name="ElementShortName">CRC_0[31:0]</obj_property>
+            <obj_property name="ObjectShortName">CRC_0[31:0]</obj_property>
+            <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/crc_ge/CRC">
+            <obj_property name="ElementShortName">CRC[31:0]</obj_property>
+            <obj_property name="ObjectShortName">CRC[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/ping_st">
+         <obj_property name="ElementShortName">ping_st</obj_property>
+         <obj_property name="ObjectShortName">ping_st</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group307">
+      <obj_property name="label">Rarbiter/arp</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/arp/eth_rxck">
+         <obj_property name="ElementShortName">eth_rxck</obj_property>
+         <obj_property name="ObjectShortName">eth_rxck</obj_property>
+         <obj_property name="CustomSignalColor">#FFD700</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/arp/start_i">
+         <obj_property name="ElementShortName">start_i</obj_property>
+         <obj_property name="ObjectShortName">start_i</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/arp/nx">
+         <obj_property name="ElementShortName">nx[3:0]</obj_property>
+         <obj_property name="ObjectShortName">nx[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/arp/st">
+         <obj_property name="ElementShortName">st[3:0]</obj_property>
+         <obj_property name="ObjectShortName">st[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/arp/go_cyc">
+         <obj_property name="ElementShortName">go_cyc[7:0]</obj_property>
+         <obj_property name="ObjectShortName">go_cyc[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/arp/s_go_done">
+         <obj_property name="ElementShortName">s_go_done</obj_property>
+         <obj_property name="ObjectShortName">s_go_done</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/arp/rarp_o">
+         <obj_property name="ElementShortName">rarp_o[8:0]</obj_property>
+         <obj_property name="ObjectShortName">rarp_o[8:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/arp/rarp_o[8]">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group484">
+      <obj_property name="label">Rarb/ping</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/ping/rst_rx">
+         <obj_property name="ElementShortName">rst_rx</obj_property>
+         <obj_property name="ObjectShortName">rst_rx</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/ping/eth_rxck">
+         <obj_property name="ElementShortName">eth_rxck</obj_property>
+         <obj_property name="ObjectShortName">eth_rxck</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/st">
+         <obj_property name="ElementShortName">st[3:0]</obj_property>
+         <obj_property name="ObjectShortName">st[3:0]</obj_property>
+         <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/ping/rxd_i[8]">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/rxd_i">
+         <obj_property name="ElementShortName">rxd_i[8:0]</obj_property>
+         <obj_property name="ObjectShortName">rxd_i[8:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/ping/ping_st">
+         <obj_property name="ElementShortName">ping_st</obj_property>
+         <obj_property name="ObjectShortName">ping_st</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/msg_cnt">
+         <obj_property name="ElementShortName">msg_cnt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">msg_cnt[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/nx">
+         <obj_property name="ElementShortName">nx[3:0]</obj_property>
+         <obj_property name="ObjectShortName">nx[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/rx_cnt">
+         <obj_property name="ElementShortName">rx_cnt[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx_cnt[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/st">
+         <obj_property name="ElementShortName">st[3:0]</obj_property>
+         <obj_property name="ObjectShortName">st[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/chksum_data">
+         <obj_property name="ElementShortName">chksum_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">chksum_data[7:0]</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/ping/chksum_en">
+         <obj_property name="ElementShortName">chksum_en</obj_property>
+         <obj_property name="ObjectShortName">chksum_en</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/ping/chksum_rst">
+         <obj_property name="ElementShortName">chksum_rst</obj_property>
+         <obj_property name="ObjectShortName">chksum_rst</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/chksum_o">
+         <obj_property name="ElementShortName">chksum_o[15:0]</obj_property>
+         <obj_property name="ObjectShortName">chksum_o[15:0]</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/csum_extend">
+         <obj_property name="ElementShortName">csum_extend[15:0]</obj_property>
+         <obj_property name="ObjectShortName">csum_extend[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/csum_cnt">
+         <obj_property name="ElementShortName">csum_cnt[7:0]</obj_property>
+         <obj_property name="ObjectShortName">csum_cnt[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#F0E68C</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/err_cnt">
+         <obj_property name="ElementShortName">err_cnt[2:0]</obj_property>
+         <obj_property name="ObjectShortName">err_cnt[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/ping/csum_ok">
+         <obj_property name="ElementShortName">csum_ok</obj_property>
+         <obj_property name="ObjectShortName">csum_ok</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/fcs_cnt">
+         <obj_property name="ElementShortName">fcs_cnt[2:0]</obj_property>
+         <obj_property name="ObjectShortName">fcs_cnt[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/tx_cnt">
+         <obj_property name="ElementShortName">tx_cnt[9:0]</obj_property>
+         <obj_property name="ObjectShortName">tx_cnt[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/ping/tx_end">
+         <obj_property name="ElementShortName">tx_end</obj_property>
+         <obj_property name="ObjectShortName">tx_end</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/tb_TOP/top/R_Arbiter/ping/ping_o[8]">
+         <obj_property name="ElementShortName">[8]</obj_property>
+         <obj_property name="ObjectShortName">[8]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/tb_TOP/top/R_Arbiter/ping/ping_o">
+         <obj_property name="ElementShortName">ping_o[8:0]</obj_property>
+         <obj_property name="ObjectShortName">ping_o[8:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="divider379" type="divider">
+      <obj_property name="label">Tx Arbiter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/ping_i">
+      <obj_property name="ElementShortName">ping_i[8:0]</obj_property>
+      <obj_property name="ObjectShortName">ping_i[8:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/rarp_i">
+      <obj_property name="ElementShortName">rarp_i[8:0]</obj_property>
+      <obj_property name="ObjectShortName">rarp_i[8:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/st">
+      <obj_property name="ElementShortName">st[3:0]</obj_property>
+      <obj_property name="ObjectShortName">st[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#DCDCDC</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/pre_cnt">
+      <obj_property name="ElementShortName">pre_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">pre_cnt[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/rarp_i[8]">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[8]</obj_property>
+      <obj_property name="ObjectShortName">[8]</obj_property>
+      <obj_property name="label">rarp[8]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/rarp_d">
+      <obj_property name="ElementShortName">rarp_d[8:0]</obj_property>
+      <obj_property name="ObjectShortName">rarp_d[8:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/rarp_first">
+      <obj_property name="ElementShortName">rarp_first</obj_property>
+      <obj_property name="ObjectShortName">rarp_first</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/rarp_last">
+      <obj_property name="ElementShortName">rarp_last</obj_property>
+      <obj_property name="ObjectShortName">rarp_last</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/ping_first">
+      <obj_property name="ElementShortName">ping_first</obj_property>
+      <obj_property name="ObjectShortName">ping_first</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/ping_last">
+      <obj_property name="ElementShortName">ping_last</obj_property>
+      <obj_property name="ObjectShortName">ping_last</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/wr_en">
+      <obj_property name="ElementShortName">wr_en</obj_property>
+      <obj_property name="ObjectShortName">wr_en</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/q_din">
+      <obj_property name="ElementShortName">q_din[11:0]</obj_property>
+      <obj_property name="ObjectShortName">q_din[11:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/wr_data_count">
+      <obj_property name="ElementShortName">wr_data_count[10:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data_count[10:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/rd_data_count">
+      <obj_property name="ElementShortName">rd_data_count[10:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data_count[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/empty">
+      <obj_property name="ElementShortName">empty</obj_property>
+      <obj_property name="ObjectShortName">empty</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/stby_cyc">
+      <obj_property name="ElementShortName">stby_cyc[1:0]</obj_property>
+      <obj_property name="ObjectShortName">stby_cyc[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/txdata_cyc">
+      <obj_property name="ElementShortName">txdata_cyc[10:0]</obj_property>
+      <obj_property name="ObjectShortName">txdata_cyc[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/rd_req">
+      <obj_property name="ElementShortName">rd_req</obj_property>
+      <obj_property name="ObjectShortName">rd_req</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/rd_en">
+      <obj_property name="ElementShortName">rd_en</obj_property>
+      <obj_property name="ObjectShortName">rd_en</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/valid">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/q_dout">
+      <obj_property name="ElementShortName">q_dout[11:0]</obj_property>
+      <obj_property name="ObjectShortName">q_dout[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/q_dout_d">
+      <obj_property name="ElementShortName">q_dout_d[11:0]</obj_property>
+      <obj_property name="ObjectShortName">q_dout_d[11:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/underflow">
+      <obj_property name="ElementShortName">underflow</obj_property>
+      <obj_property name="ObjectShortName">underflow</obj_property>
+      <obj_property name="CustomSignalColor">#E0FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/rd_rst_busy">
+      <obj_property name="ElementShortName">rd_rst_busy</obj_property>
+      <obj_property name="ObjectShortName">rd_rst_busy</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/fcs_cnt">
+      <obj_property name="ElementShortName">fcs_cnt[2:0]</obj_property>
+      <obj_property name="ObjectShortName">fcs_cnt[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/tx_any">
+      <obj_property name="ElementShortName">tx_any</obj_property>
+      <obj_property name="ObjectShortName">tx_any</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/tx_end">
+      <obj_property name="ElementShortName">tx_end</obj_property>
+      <obj_property name="ObjectShortName">tx_end</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/wr_rst_busy">
+      <obj_property name="ElementShortName">wr_rst_busy</obj_property>
+      <obj_property name="ObjectShortName">wr_rst_busy</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/CRC">
+      <obj_property name="ElementShortName">CRC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CRC[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/r_crc">
+      <obj_property name="ElementShortName">r_crc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_crc[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_TOP/top/T_Arbiter/txd_o">
+      <obj_property name="ElementShortName">txd_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">txd_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_TOP/top/T_Arbiter/gmii_txctl_o">
+      <obj_property name="ElementShortName">gmii_txctl_o</obj_property>
+      <obj_property name="ObjectShortName">gmii_txctl_o</obj_property>
+   </wvobject>
+</wave_config>

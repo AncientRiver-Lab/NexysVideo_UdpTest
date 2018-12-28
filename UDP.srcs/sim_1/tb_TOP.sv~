@@ -1,0 +1,107 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 12/25/2018 02:56:08 PM
+// Design Name: 
+// Module Name: tb_TOP
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+`timescale 1ns / 1ps
+
+`include "user_defines.sv"
+
+module tb_TOP();
+   logic       SYSCLK;
+   logic       CPU_RSTN;
+   logic [3:0] ETH_RXD;
+   logic       ETH_RXCTL;
+   logic       ETH_RXCK;
+
+   TOP top(
+	   .ETH_RXCK(ETH_RXCK),
+	   .ETH_RXCTL(ETH_RXCTL),
+	   .ETH_RXD (ETH_RXD),
+	   .SYSCLK (SYSCLK),
+	   .CPU_RSTN (CPU_RSTN)
+	   );
+   
+   initial begin
+      ETH_RXCTL = `LO;
+      ETH_RXD = {4{1'bx}};
+      
+      fork
+	 forever begin       //-- Generate system clock.
+	    #5 SYSCLK = `HI;
+	    #5 SYSCLK = `LO;
+	 end
+	 forever begin       //-- Generate etherRx clock.
+	    #4 ETH_RXCK = `HI;
+	    #4 ETH_RXCK = `LO;
+	 end
+	 begin               //-- Generate reset.
+	    CPU_RSTN = `HI;
+	    #29 CPU_RSTN = `LO;
+	    #23 CPU_RSTN = `HI;
+            #100;
+	    @(posedge top.eth_clkgen_locked);
+	    #100;
+	    recvByte(8'h12);
+	    recvByte(8'h34);
+	    recvByte(8'h56);
+	    recvByte(8'h78);
+	    recvByte(8'h9A);
+	 end
+      join
+   end
+	    
+   //**
+   //** receive 1 Byte via RGMII.
+   //**
+   task recvByte(input [7:0] c);
+      begin
+	 @(posedge ETH_RXCK) #0.5;
+	 ETH_RXD = c[3:0];
+	 ETH_RXCTL = 1'b1;
+	 @(negedge ETH_RXCK) #0.5;
+	 ETH_RXD = c[7:4];
+      end
+   endtask //
+   task recvMac(input [47:0] addr);
+      begin
+	 recvByte(addr[47:40]);
+	 recvByte(addr[39:32]);
+	 recvByte(addr[31:24]);
+	 recvByte(addr[23:16]);
+	 recvByte(addr[15:8]);
+	 recvByte(addr[7:0]);
+      end
+   endtask // recvMac
+   task recvIp(input [31:0] addr);
+      begin
+	 recvByte(addr[31:24]);
+	 recvByte(addr[23:16]);
+	 recvByte(addr[15:8]);
+	 recvByte(addr[7:0]);
+      end
+   endtask // recvIp
+   task rstCPU();
+      begin
+	 CPU_RSTN = 0;
+	 #1000;
+	 CPU_RSTN = 1;
+      end
+   endtask
+endmodule // tb_TOP
+

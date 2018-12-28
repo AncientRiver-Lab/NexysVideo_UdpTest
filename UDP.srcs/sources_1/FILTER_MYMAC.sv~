@@ -1,0 +1,10 @@
+
+module FILTER_MYMAC 
+  (
+   input clk
+		     
+ ) ;
+   
+endmodule // FILTER_MYMAC
+
+   
