@@ -7,6 +7,3 @@
 
 # IP: ip/image_RAM/image_RAM.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==image_RAM || ORIG_REF_NAME==image_RAM} -quiet] -quiet
-
-# IP: ip/CLKGEN/CLKGEN.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==CLKGEN || ORIG_REF_NAME==CLKGEN} -quiet] -quiet

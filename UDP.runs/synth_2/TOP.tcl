@@ -50,12 +50,6 @@ read_verilog -library xil_defaultlib /home/moikawa/proj_Mitsuhashi/NexysVideo_Ud
 read_ip -quiet /home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/image_RAM/image_RAM.xci
 set_property used_in_implementation false [get_files -all /home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/image_RAM/image_RAM_ooc.xdc]
 
-read_ip -quiet /home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/CLKGEN/CLKGEN.xci
-set_property used_in_implementation false [get_files -all /home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/CLKGEN/CLKGEN_board.xdc]
-set_property used_in_implementation false [get_files -all /home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/CLKGEN/CLKGEN.xdc]
-set_property used_in_implementation false [get_files -all /home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/CLKGEN/CLKGEN_late.xdc]
-set_property used_in_implementation false [get_files -all /home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/CLKGEN/CLKGEN_ooc.xdc]
-
 read_ip -quiet /home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/queue/queue.xci
 set_property used_in_implementation false [get_files -all /home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/queue/queue.xdc]
 set_property used_in_implementation false [get_files -all /home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/queue/queue_clocks.xdc]

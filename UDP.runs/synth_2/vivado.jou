@@ -2,8 +2,8 @@
 # Vivado v2018.1 (64-bit)
 # SW Build 2188600 on Wed Apr  4 18:39:19 MDT 2018
 # IP Build 2185939 on Wed Apr  4 20:55:05 MDT 2018
-# Start of session at: Fri Dec 28 11:13:14 2018
-# Process ID: 29845
+# Start of session at: Fri Jan 11 13:20:57 2019
+# Process ID: 28889
 # Current directory: /home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2
 # Command line: vivado -log TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
 # Log file: /home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/TOP.vds

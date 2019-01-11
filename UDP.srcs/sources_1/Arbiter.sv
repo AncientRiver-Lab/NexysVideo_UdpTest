@@ -26,7 +26,7 @@ module Arbiter(
     input                 gmii_rxctl,
     input                 rst_rx,
     input                 rst125,
-    input                 clk125,
+    //input                 clk125,
     
     input                 rst_btn,
     input [7:0]           SW,
@@ -265,7 +265,7 @@ parameter  RxEnd   = 4'h4;
     recv_image recv_image(
         /*---Input---*/
         .eth_rxck(eth_rxck),
-        .clk125(clk125),
+        .clk125(eth_rxck),
         .rst_rx(rst_rx),
         .pre(pre),
         .rxd(q_rxd[0]),
@@ -293,7 +293,7 @@ parameter  RxEnd   = 4'h4;
     trans_image trans_image(
         /*---Input---*/
         .eth_rxck(eth_rxck),
-        .clk125(clk125),
+        .clk125(eth_rxck),
         .rst_rx(rst_rx),
         .rst_btn(rst_btn),
         .imdata(imdata),

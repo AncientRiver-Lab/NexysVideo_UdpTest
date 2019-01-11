@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_2" LaunchPart="xc7a200tsbg484-1" LaunchTime="1545963191">
+<GenRun Id="impl_2" LaunchPart="xc7a200tsbg484-1" LaunchTime="1547180455">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="TOP.drc"/>
   <File Type="BG-BGN" Name="TOP.bgn"/>
@@ -67,15 +67,6 @@
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/image_RAM/image_RAM.xci">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/ip/CLKGEN/CLKGEN.xci">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../ping_reply/ping_reply.srcs/ip/CLKGEN/CLKGEN.xci"/>
-        <Attr Name="ImportTime" Val="1529987283"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -165,6 +156,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/ip/CLKGEN/CLKGEN.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../ping_reply/ping_reply.srcs/ip/CLKGEN/CLKGEN.xci"/>
+        <Attr Name="ImportTime" Val="1529987283"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/crc32_8.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -187,13 +188,6 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/constrs_1/NexysVideo_20181114.xdc">
-      <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/constrs_1/new/clock_rxd.xdc">
       <FileInfo>
         <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>

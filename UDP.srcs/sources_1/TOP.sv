@@ -60,10 +60,8 @@ module TOP(
     wire rst_rx;
     ETH_CLKGEN eth_clkgen (
           .eth_rxck     (ETH_RXCK),
-          .rxck_n90deg  (),
           .rxck_90deg   (eth_rxck),
-          .rxck_180deg  (),
-          .rxck_270deg  (),
+          .rxck_180deg  (eth_rxck_90),
           .locked       (eth_clkgen_locked),
           .resetn       (CPU_RSTN)
     );
@@ -84,31 +82,16 @@ module TOP(
     //**------------------------------------------------------------
     //** GMII to RGMII translator. (add by moikawa)
     //**
-    wire clk10;
-    wire clk100;
-    wire clk125,    rst125;
-    wire clk125_90;
+    wire rst125;
     wire sys_clkgen_locked;
     GMII2RGMII gmii2rgmii (
           .txck_o   ( ETH_TXCK   ),
           .txd_o    ( ETH_TXD    ), //--> OUTPUT
           .txctl_o  ( ETH_TXCTL  ), //--> OUTPUT
-          .txck_i   ( clk125     ), //- Tx clock 125MHz.
-          .txck_90_i( clk125_90  ),
+          .txck_i   ( eth_rxck   ), //- Tx clock 125MHz.
+          .txck_90_i( eth_rxck_90),
           .txd_i    ( gmii_txd   ), //-- [7:0]
           .txctl_i  ( gmii_txctl )  //--
-    );
-    //**------------------------------------------------------------
-    //** Clock generator. (add by moikawa)
-    //**
-    CLKGEN clkgen (
-          .clk125_90( clk125_90  ), //- 125 MHz
-          .clk125   ( clk125     ), //- 125 MHz
-          .clk100   ( clk100     ), //- 100 MHz
-          .clk10    ( clk10      ), //- 10 MHz
-          .reset    ( !CPU_RSTN  ),
-          .locked   ( sys_clkgen_locked     ),
-          .SYSCLK   ( SYSCLK     )
     );
     //**------------------------------------------------------------
     //** Reset generator. (add by moikawa)
@@ -146,7 +129,7 @@ module TOP(
         .eth_rxck     (eth_rxck),   //<-- "eth_clkgen"
         .rst_rx       (rst_rx),
         .rst125       (rst125),
-        .clk125       (clk125),
+        //.clk125       (clk125),
         .rst_btn      (rst_btn),
         .SW(SW),
         /*---OUTPUT---*/

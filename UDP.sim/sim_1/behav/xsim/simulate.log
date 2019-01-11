@@ -1,0 +1,8 @@
+Vivado Simulator 2018.1
+Time resolution is 1 ps
+Block Memory Generator module tb_TOP.top.R_Arbiter.recv_image.image_RAM.inst.native_mem_module.blk_mem_gen_v8_4_1_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+blk_mem_gen_v8_4_1 collision detected at time: 1894000, Instance: tb_TOP.top.R_Arbiter.recv_image.image_RAM.inst.native_mem_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 3134000, Instance: tb_TOP.top.R_Arbiter.recv_image.image_RAM.inst.native_mem_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 4374000, Instance: tb_TOP.top.R_Arbiter.recv_image.image_RAM.inst.native_mem_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B read address: 0
+blk_mem_gen_v8_4_1 collision detected at time: 7342000, Instance: tb_TOP.top.R_Arbiter.recv_image.image_RAM.inst.native_mem_module.blk_mem_gen_v8_4_1_inst, A write address: 0, B read address: 0

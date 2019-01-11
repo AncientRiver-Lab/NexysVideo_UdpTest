@@ -14,16 +14,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 29858 
+INFO: Helper process launched with PID 28901 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1379.012 ; gain = 88.000 ; free physical = 56203 ; free virtual = 125955
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1370.012 ; gain = 87.000 ; free physical = 54447 ; free virtual = 123554
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'TOP' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:22]
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:55]
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:56]
-INFO: [Synth 8-6157] synthesizing module 'ETH_CLKGEN' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-29845-Z10PE-01/realtime/ETH_CLKGEN_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'ETH_CLKGEN' (1#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-29845-Z10PE-01/realtime/ETH_CLKGEN_stub.v:5]
-WARNING: [Synth 8-350] instance 'eth_clkgen' of module 'ETH_CLKGEN' requires 8 connections, but only 7 given [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:61]
+INFO: [Synth 8-6157] synthesizing module 'ETH_CLKGEN' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-28889-Z10PE-01/realtime/ETH_CLKGEN_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ETH_CLKGEN' (1#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-28889-Z10PE-01/realtime/ETH_CLKGEN_stub.v:5]
+WARNING: [Synth 8-350] instance 'eth_clkgen' of module 'ETH_CLKGEN' requires 6 connections, but only 5 given [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:61]
 INFO: [Synth 8-6157] synthesizing module 'RGMII2GMII' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/RGMII2GMII.sv:11]
 INFO: [Synth 8-6157] synthesizing module 'IDDR' [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:21386]
 	Parameter DDR_CLK_EDGE bound to: SAME_EDGE_PIPELINED - type: string 
@@ -44,10 +44,8 @@ INFO: [Synth 8-6157] synthesizing module 'ODDR' [/opt/Xilinx/Vivado/2018.1/scrip
 	Parameter SRTYPE bound to: SYNC - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'ODDR' (4#1) [/opt/Xilinx/Vivado/2018.1/scripts/rt/data/unisim_comp.v:30652]
 INFO: [Synth 8-6155] done synthesizing module 'GMII2RGMII' (5#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/GMII2RGMII.sv:11]
-INFO: [Synth 8-6157] synthesizing module 'CLKGEN' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-29845-Z10PE-01/realtime/CLKGEN_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'CLKGEN' (6#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-29845-Z10PE-01/realtime/CLKGEN_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'RSTGEN' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/RSTGEN.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'RSTGEN' (7#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/RSTGEN.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'RSTGEN' (6#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/RSTGEN.v:11]
 INFO: [Synth 8-6157] synthesizing module 'Arbiter' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/Arbiter.sv:23]
 	Parameter Idle bound to: 4'b0001 
 	Parameter WaitSFD bound to: 4'b0010 
@@ -70,7 +68,7 @@ INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/moikawa
 INFO: [Synth 8-155] case statement is not full and has no default [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/Arbiter.sv:74]
 INFO: [Synth 8-6157] synthesizing module 'CRC_ge' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/CRC_ge.sv:23]
 	Parameter Gx bound to: 79764919 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'CRC_ge' (8#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/CRC_ge.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'CRC_ge' (7#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/CRC_ge.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'ARP' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ARP.sv:23]
 	Parameter Idle bound to: 4'b0001 
 	Parameter TxRdy bound to: 4'b0010 
@@ -81,7 +79,7 @@ INFO: [Synth 8-6157] synthesizing module 'ARP' [/home/moikawa/proj_Mitsuhashi/Ne
 	Parameter HLEN bound to: 8'b00000110 
 	Parameter PLEN bound to: 8'b00000100 
 	Parameter OPER bound to: 16'b0000000000000010 
-INFO: [Synth 8-6155] done synthesizing module 'ARP' (9#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ARP.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'ARP' (8#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ARP.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'ping' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ping.sv:22]
 	Parameter Idle bound to: 4'b0000 
 	Parameter Stby bound to: 4'b1101 
@@ -151,7 +149,7 @@ WARNING: [Synth 8-324] index 296 out of range [/home/moikawa/proj_Mitsuhashi/Nex
 INFO: [Synth 8-6157] synthesizing module 'checksum' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/checksum.sv:23]
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/checksum.sv:60]
 WARNING: [Synth 8-3936] Found unconnected internal register 'd_data_en_reg' and it is trimmed from '2' to '1' bits. [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/checksum.sv:43]
-INFO: [Synth 8-6155] done synthesizing module 'checksum' (10#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/checksum.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'checksum' (9#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/checksum.sv:23]
 WARNING: [Synth 8-6014] Unused sequential element ICMP_Msg_reg[255] was removed.  [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ping.sv:159]
 WARNING: [Synth 8-6014] Unused sequential element ICMP_Msg_reg[254] was removed.  [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ping.sv:159]
 WARNING: [Synth 8-6014] Unused sequential element ICMP_Msg_reg[253] was removed.  [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ping.sv:159]
@@ -253,7 +251,7 @@ WARNING: [Synth 8-6014] Unused sequential element ICMP_Msg_reg[158] was removed.
 WARNING: [Synth 8-6014] Unused sequential element ICMP_Msg_reg[157] was removed.  [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ping.sv:159]
 WARNING: [Synth 8-6014] Unused sequential element ICMP_Msg_reg[156] was removed.  [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ping.sv:159]
 INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'ping' (11#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ping.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ping' (10#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ping.sv:22]
 INFO: [Synth 8-6157] synthesizing module 'recv_image' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/recv_image.sv:30]
 	Parameter Idle bound to: 8'b00000000 
 	Parameter Presv bound to: 8'b00000001 
@@ -274,10 +272,10 @@ INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/moikawa
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/recv_image.sv:261]
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/recv_image.sv:263]
 WARNING: [Synth 8-6090] variable 'v_cnt' is written by both blocking and non-blocking assignments, entire logic could be removed [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/recv_image.sv:416]
-INFO: [Synth 8-6157] synthesizing module 'image_RAM' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-29845-Z10PE-01/realtime/image_RAM_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'image_RAM' (12#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-29845-Z10PE-01/realtime/image_RAM_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'image_RAM' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-28889-Z10PE-01/realtime/image_RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'image_RAM' (11#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-28889-Z10PE-01/realtime/image_RAM_stub.v:6]
 INFO: [Synth 8-4471] merging register 'data_pipe_v_reg[16][7:0]' into 'data_pipe_reg[17][7:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/recv_image.sv:347]
-INFO: [Synth 8-6155] done synthesizing module 'recv_image' (13#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/recv_image.sv:30]
+INFO: [Synth 8-6155] done synthesizing module 'recv_image' (12#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/recv_image.sv:30]
 INFO: [Synth 8-6157] synthesizing module 'trans_image' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:28]
 	Parameter IDLE bound to: 8'b00000000 
 	Parameter Presv bound to: 8'b00000001 
@@ -309,9 +307,9 @@ WARNING: [Synth 8-6090] variable 'v_cnt' is written by both blocking and non-blo
 WARNING: [Synth 8-567] referenced signal 'txbuf_sel2' should be on the sensitivity list [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:703]
 INFO: [Synth 8-4471] merging register 'data_pipe_v_reg[16][7:0]' into 'data_pipe_reg[17][7:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:426]
 INFO: [Synth 8-4471] merging register 'data_pipe2_reg[17][7:0]' into 'data_pipe_reg[17][7:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:714]
-INFO: [Synth 8-6155] done synthesizing module 'trans_image' (14#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'trans_image' (13#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:28]
 WARNING: [Synth 8-350] instance 'trans_image' of module 'trans_image' requires 19 connections, but only 17 given [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/Arbiter.sv:293]
-INFO: [Synth 8-6155] done synthesizing module 'Arbiter' (15#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/Arbiter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter' (14#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/Arbiter.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'T_Arbiter' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/T_Arbiter.sv:22]
 	Parameter Idle bound to: 4'b0000 
 	Parameter Stby bound to: 4'b0001 
@@ -321,20 +319,21 @@ INFO: [Synth 8-6157] synthesizing module 'T_Arbiter' [/home/moikawa/proj_Mitsuha
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/T_Arbiter.sv:205]
 INFO: [Synth 8-5534] Detected attribute (* dont_touch = "true" *) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/T_Arbiter.sv:273]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/T_Arbiter.sv:63]
-INFO: [Synth 8-6157] synthesizing module 'queue' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-29845-Z10PE-01/realtime/queue_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'queue' (16#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-29845-Z10PE-01/realtime/queue_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'queue' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-28889-Z10PE-01/realtime/queue_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'queue' (15#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/.Xil/Vivado-28889-Z10PE-01/realtime/queue_stub.v:6]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/T_Arbiter.sv:207]
 WARNING: [Synth 8-87] always_comb on 'wr_en_reg' did not result in combinational logic [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/T_Arbiter.sv:114]
 WARNING: [Synth 8-87] always_comb on 'q_din_reg' did not result in combinational logic [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/T_Arbiter.sv:115]
-INFO: [Synth 8-6155] done synthesizing module 'T_Arbiter' (17#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/T_Arbiter.sv:22]
-WARNING: [Synth 8-350] instance 'T_Arbiter' of module 'T_Arbiter' requires 11 connections, but only 10 given [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:158]
-WARNING: [Synth 8-324] index 8 out of range [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:227]
+INFO: [Synth 8-6155] done synthesizing module 'T_Arbiter' (16#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/T_Arbiter.sv:22]
+WARNING: [Synth 8-350] instance 'T_Arbiter' of module 'T_Arbiter' requires 11 connections, but only 10 given [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:141]
+WARNING: [Synth 8-324] index 8 out of range [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:210]
+WARNING: [Synth 8-3848] Net sys_clkgen_locked in module/entity TOP does not have driver. [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:86]
 WARNING: [Synth 8-3848] Net PMOD_B in module/entity TOP does not have driver. [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:45]
 WARNING: [Synth 8-3848] Net PMOD_C in module/entity TOP does not have driver. [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:46]
-WARNING: [Synth 8-3848] Net UDP_btn_d in module/entity TOP does not have driver. [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:139]
-WARNING: [Synth 8-3848] Net UDP_btn_tx in module/entity TOP does not have driver. [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:135]
-WARNING: [Synth 8-3848] Net rst125 in module/entity TOP does not have driver. [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:89]
-INFO: [Synth 8-6155] done synthesizing module 'TOP' (18#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:22]
+WARNING: [Synth 8-3848] Net UDP_btn_d in module/entity TOP does not have driver. [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:122]
+WARNING: [Synth 8-3848] Net UDP_btn_tx in module/entity TOP does not have driver. [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:118]
+WARNING: [Synth 8-3848] Net rst125 in module/entity TOP does not have driver. [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:85]
+INFO: [Synth 8-6155] done synthesizing module 'TOP' (17#1) [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:22]
 WARNING: [Synth 8-3917] design TOP has port eth_mdc driven by constant 1
 WARNING: [Synth 8-3917] design TOP has port PMOD_A[6] driven by constant 0
 WARNING: [Synth 8-3917] design TOP has port PMOD_A[5] driven by constant 0
@@ -375,9 +374,10 @@ WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_C[0]
 WARNING: [Synth 8-3331] design TOP has unconnected port eth_mdio
 WARNING: [Synth 8-3331] design TOP has unconnected port eth_int_b
 WARNING: [Synth 8-3331] design TOP has unconnected port eth_pme_b
+WARNING: [Synth 8-3331] design TOP has unconnected port SYSCLK
 WARNING: [Synth 8-3331] design TOP has unconnected port reset_i
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:02:57 ; elapsed = 00:03:17 . Memory (MB): peak = 2565.598 ; gain = 1274.586 ; free physical = 55282 ; free virtual = 125052
+Finished RTL Elaboration : Time (s): cpu = 00:02:59 ; elapsed = 00:03:20 . Memory (MB): peak = 2557.598 ; gain = 1274.586 ; free physical = 53563 ; free virtual = 122687
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -386,25 +386,26 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[8] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:158]
-WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[7] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:158]
-WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[6] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:158]
-WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[5] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:158]
-WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[4] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:158]
-WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[3] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:158]
-WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[2] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:158]
-WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[1] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:158]
-WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[0] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:158]
-WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_tx to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:158]
-WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_tx to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:158]
+WARNING: [Synth 8-3295] tying undriven pin rstgen_rx:locked_i to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:105]
+WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[8] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:141]
+WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[7] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:141]
+WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[6] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:141]
+WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[5] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:141]
+WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[4] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:141]
+WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[3] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:141]
+WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[2] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:141]
+WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[1] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:141]
+WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_d[0] to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:141]
+WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_btn_tx to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:141]
+WARNING: [Synth 8-3295] tying undriven pin T_Arbiter:UDP_tx to constant 0 [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:141]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:08 ; elapsed = 00:03:30 . Memory (MB): peak = 2565.598 ; gain = 1274.586 ; free physical = 55419 ; free virtual = 125189
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:10 ; elapsed = 00:03:31 . Memory (MB): peak = 2557.598 ; gain = 1274.586 ; free physical = 53699 ; free virtual = 122824
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:08 ; elapsed = 00:03:30 . Memory (MB): peak = 2565.598 ; gain = 1274.586 ; free physical = 55419 ; free virtual = 125189
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:10 ; elapsed = 00:03:31 . Memory (MB): peak = 2557.598 ; gain = 1274.586 ; free physical = 53699 ; free virtual = 122824
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -415,8 +416,6 @@ Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/image_RAM/image_RAM/image_RAM_in_context.xdc] for cell 'R_Arbiter/recv_image/image_RAM'
 Finished Parsing XDC File [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/image_RAM/image_RAM/image_RAM_in_context.xdc] for cell 'R_Arbiter/recv_image/image_RAM'
-Parsing XDC File [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/CLKGEN/CLKGEN/CLKGEN_in_context.xdc] for cell 'clkgen'
-Finished Parsing XDC File [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/CLKGEN/CLKGEN/CLKGEN_in_context.xdc] for cell 'clkgen'
 Parsing XDC File [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/queue/queue/queue_in_context.xdc] for cell 'T_Arbiter/TX_queue'
 Finished Parsing XDC File [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/queue/queue/queue_in_context.xdc] for cell 'T_Arbiter/TX_queue'
 Parsing XDC File [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ip/ETH_CLKGEN/ETH_CLKGEN/ETH_CLKGEN_in_context.xdc] for cell 'eth_clkgen'
@@ -436,8 +435,6 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/constrs_1/new/etc.xdc]
 Finished Parsing XDC File [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/constrs_1/new/etc.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/constrs_1/new/etc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/dont_touch.xdc]
 Finished Parsing XDC File [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/dont_touch.xdc]
 Completed Processing XDC Constraints
@@ -445,11 +442,11 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.07 . Memory (MB): peak = 2948.047 ; gain = 0.000 ; free physical = 54712 ; free virtual = 124498
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2947.051 ; gain = 0.000 ; free physical = 53007 ; free virtual = 122132
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'R_Arbiter/recv_image/image_RAM' at clock pin 'clka' is different from the actual clock period '8.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'T_Arbiter/TX_queue' at clock pin 'rd_clk' is different from the actual clock period '8.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:04:07 ; elapsed = 00:04:36 . Memory (MB): peak = 2948.047 ; gain = 1657.035 ; free physical = 55156 ; free virtual = 124941
+Finished Constraint Validation : Time (s): cpu = 00:04:06 ; elapsed = 00:04:35 . Memory (MB): peak = 2947.051 ; gain = 1664.039 ; free physical = 53453 ; free virtual = 122578
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-4471] merging register 'TXBUF_reg[21][7:0]' into 'TXBUF_reg[61][7:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/ARP.sv:95]
@@ -619,3 +616,1199 @@ INFO: [Synth 8-5546] ROM "RXBUF_reg[949]" won't be mapped to RAM because it is t
 INFO: [Synth 8-5546] ROM "RXBUF_reg[948]" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "RXBUF_reg[947]" won't be mapped to RAM because it is too sparse
 INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'TXBUF_reg[1044][7:0]' into 'TXBUF_reg[38][7:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:544]
+INFO: [Synth 8-4471] merging register 'TXBUF_reg[1045][7:0]' into 'TXBUF_reg[17][7:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:544]
+INFO: [Synth 8-4471] merging register 'TXBUF_reg[16][7:0]' into 'TXBUF_reg[17][7:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:544]
+INFO: [Synth 8-4471] merging register 'TXBUF_reg[15][7:0]' into 'TXBUF_reg[21][7:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:544]
+INFO: [Synth 8-4471] merging register 'TXBUF_reg[13][7:0]' into 'TXBUF_reg[21][7:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:544]
+INFO: [Synth 8-4471] merging register 'VBUF_reg[11][7:0]' into 'VBUF_reg[17][7:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:592]
+INFO: [Synth 8-4471] merging register 'VBUF_reg[10][7:0]' into 'VBUF_reg[16][7:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:592]
+INFO: [Synth 8-4471] merging register 'VBUF_reg[18][7:0]' into 'VBUF_reg[19][7:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:592]
+INFO: [Synth 8-4471] merging register 'VBUF_reg[8][7:0]' into 'VBUF_reg[19][7:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/trans_image.sv:592]
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'trans_image'
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[499]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[498]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[497]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[496]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[495]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[494]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[493]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[492]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[491]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[490]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[489]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[488]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[487]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[486]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[485]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[484]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[483]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[482]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[481]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[480]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[479]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[478]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[477]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[476]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[475]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[474]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[473]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[472]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[471]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[470]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[469]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[468]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[467]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[466]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[465]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[464]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[463]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[462]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[461]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[460]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[459]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[458]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[457]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[456]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[455]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[454]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[453]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[452]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[451]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[450]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[449]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[448]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[447]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[446]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[445]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[444]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[443]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[442]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[441]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[440]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[439]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[438]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[437]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[436]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[435]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[434]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[433]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[432]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[431]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[430]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[429]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[428]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[427]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[426]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[425]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[424]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[423]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[422]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[421]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[420]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[419]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[418]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[417]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[416]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[415]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[414]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[413]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[412]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[411]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[410]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[409]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[408]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[407]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[406]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "image_bufferB_reg[405]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "csum_extend" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_0_in" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'Arbiter'
+INFO: [Synth 8-5544] ROM "rxend_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CRC_flg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "delay_CRC" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_crc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rxend_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "CRC_flg" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "delay_CRC" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "r_crc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'T_Arbiter'
+INFO: [Synth 8-5544] ROM "stby_cyc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "txdata_cyc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gmii_txctl_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pre_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pre_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "txd_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LED" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "stby_cyc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "txdata_cyc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gmii_txctl_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pre_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pre_cnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "txd_o" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LED" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'st_reg' in module 'fsm632C09400'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                   00000000000001 |                             0000
+                    Stby |                   00000000000010 |                             1101
+                   Presv |                   00000000000100 |                             0001
+                   Hcsum |                   00000000001000 |                             0010
+                  Hc_End |                   00000000010000 |                             0011
+                   Icsum |                   00000000100000 |                             0100
+                  Ic_End |                   00000001000000 |                             0101
+                   Ready |                   00000010000000 |                             0110
+                   Tx_Hc |                   00000100000000 |                             0111
+                 Tx_HEnd |                   00001000000000 |                             1000
+                   Tx_Ic |                   00010000000000 |                             1001
+                 Tx_IEnd |                   00100000000000 |                             1010
+                   Tx_En |                   01000000000000 |                             1011
+                  Tx_End |                   10000000000000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'one-hot' in module 'ping'
+INFO: [Synth 8-6159] Found Keep on FSM register 'st_reg' in module 'trans_image', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                             0001
+                 WaitSFD |                               01 |                             0010
+                  RxData |                               10 |                             0011
+                   RxEnd |                               11 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'Arbiter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                            00001 |                             0000
+                    Stby |                            00010 |                             0001
+                   TxPre |                            00100 |                             0010
+                  TxData |                            01000 |                             0100
+                   TxEnd |                            10000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'one-hot' in module 'T_Arbiter'
+WARNING: [Synth 8-327] inferring latch for variable 'q_din_reg' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/T_Arbiter.sv:115]
+WARNING: [Synth 8-327] inferring latch for variable 'wr_en_reg' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/T_Arbiter.sv:114]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:06:23 ; elapsed = 00:07:03 . Memory (MB): peak = 2947.051 ; gain = 1664.039 ; free physical = 51328 ; free virtual = 120471
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |ping__GB0         |           1|     34650|
+|2     |ping__GB1         |           1|     12084|
+|3     |ping__GB2         |           1|     11312|
+|4     |ping__GB3         |           1|      1826|
+|5     |ping__GB4         |           1|     15523|
+|6     |ping__GB5         |           1|     19642|
+|7     |ping__GB6         |           1|     25406|
+|8     |ping__GB7         |           1|     29912|
+|9     |ping__GB8         |           1|     30585|
+|10    |ping__GB9         |           1|      8406|
+|11    |ping__GB10        |           1|     32101|
+|12    |ping__GB11        |           1|     20372|
+|13    |recv_image__GB0   |           1|     34740|
+|14    |recv_image__GB1   |           1|     16328|
+|15    |recv_image__GB2   |           1|     16328|
+|16    |recv_image__GB3   |           1|     24492|
+|17    |recv_image__GB4   |           1|     32656|
+|18    |recv_image__GB5   |           1|     34204|
+|19    |recv_image__GB6   |           1|     14878|
+|20    |recv_image__GB7   |           1|     16742|
+|21    |recv_image__GB8   |           1|     21006|
+|22    |recv_image__GB9   |           1|     30054|
+|23    |recv_image__GB10  |           1|     25226|
+|24    |recv_image__GB11  |           1|     16745|
+|25    |recv_image__GB12  |           1|     16750|
+|26    |trans_image__GB0  |           1|     35117|
+|27    |trans_image__GB1  |           1|     16744|
+|28    |trans_image__GB2  |           1|     16744|
+|29    |trans_image__GB3  |           1|     25116|
+|30    |trans_image__GB4  |           1|     33520|
+|31    |trans_image__GB5  |           1|     37101|
+|32    |trans_image__GB6  |           1|     13134|
+|33    |trans_image__GB7  |           1|     26001|
+|34    |trans_image__GB8  |           1|     16744|
+|35    |trans_image__GB9  |           1|     16744|
+|36    |trans_image__GB10 |           1|     16744|
+|37    |trans_image__GB11 |           1|     25140|
+|38    |trans_image__GB12 |           1|     33520|
+|39    |trans_image__GB13 |           1|     25714|
+|40    |trans_image__GB14 |           1|     16354|
+|41    |trans_image__GB15 |           1|     16354|
+|42    |trans_image__GB16 |           1|     16348|
+|43    |trans_image__GB17 |           1|     24548|
+|44    |trans_image__GB18 |           1|     32631|
+|45    |Arbiter__GC0      |           1|      4036|
+|46    |TOP__GC0          |           1|      1088|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 6     
+	   2 Input     11 Bit       Adders := 7     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 7     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 5     
+	   2 Input      3 Bit       Adders := 6     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     32 Bit         XORs := 16    
+	   2 Input     16 Bit         XORs := 3     
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 16    
++---Registers : 
+	               48 Bit    Registers := 4     
+	               32 Bit    Registers := 8     
+	               18 Bit    Registers := 1     
+	               17 Bit    Registers := 6     
+	               16 Bit    Registers := 9     
+	               11 Bit    Registers := 9     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 8     
+	                8 Bit    Registers := 5787  
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 31    
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 21    
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 9     
+	   2 Input     16 Bit        Muxes := 7     
+	   3 Input     16 Bit        Muxes := 2     
+	  14 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 17    
+	   3 Input     14 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 3     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 23848 
+	   4 Input      8 Bit        Muxes := 68    
+	   5 Input      8 Bit        Muxes := 181   
+	   3 Input      8 Bit        Muxes := 16    
+	   6 Input      8 Bit        Muxes := 3     
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 3     
+	   5 Input      4 Bit        Muxes := 2     
+	  14 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 24    
+	   2 Input      3 Bit        Muxes := 35    
+	   4 Input      3 Bit        Muxes := 12    
+	   3 Input      3 Bit        Muxes := 7     
+	   2 Input      2 Bit        Muxes := 14    
+	   3 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5197  
+	   3 Input      1 Bit        Muxes := 40    
+	   4 Input      1 Bit        Muxes := 9     
+	   5 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module checksum__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               17 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 3     
+Module ping 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 5     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 515   
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   3 Input     16 Bit        Muxes := 1     
+	  14 Input     14 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 17    
+	   3 Input     14 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 23780 
+	   4 Input      8 Bit        Muxes := 66    
+	   5 Input      8 Bit        Muxes := 181   
+	   3 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 24    
+	   2 Input      3 Bit        Muxes := 29    
+	   4 Input      3 Bit        Muxes := 10    
+	   3 Input      3 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 17    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+Module checksum__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               17 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 3     
+Module recv_image 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               11 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2100  
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 17    
+	   3 Input      8 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2116  
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+Module checksum 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 2     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               17 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 3     
+Module trans_image 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 3109  
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 24    
+	   3 Input      8 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3029  
+	   3 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module CRC_ge__1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+Module ARP 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 29    
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 20    
+	   3 Input      8 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module Arbiter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 29    
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 13    
+	   3 Input      1 Bit        Muxes := 27    
+Module RGMII2GMII 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module RSTGEN__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module RSTGEN 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module CRC_ge 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+Module T_Arbiter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "TXBUF2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TXBUF2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TXBUF_reg[16]0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TXBUF_reg[18]0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TXBUF_reg[60]0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TXBUF_reg[61]0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TXBUF_reg[62]0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TXBUF_reg[63]0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3917] design TOP has port eth_mdc driven by constant 1
+WARNING: [Synth 8-3917] design TOP has port PMOD_A[6] driven by constant 0
+WARNING: [Synth 8-3917] design TOP has port PMOD_A[5] driven by constant 0
+WARNING: [Synth 8-3917] design TOP has port PMOD_A[4] driven by constant 1
+WARNING: [Synth 8-3917] design TOP has port SET_VADJ[1] driven by constant 1
+WARNING: [Synth 8-3917] design TOP has port SET_VADJ[0] driven by constant 1
+WARNING: [Synth 8-3917] design TOP has port VADJ_EN driven by constant 1
+WARNING: [Synth 8-3331] design trans_image has unconnected port SW[3]
+WARNING: [Synth 8-3331] design trans_image has unconnected port SW[2]
+WARNING: [Synth 8-3331] design trans_image has unconnected port SW[1]
+WARNING: [Synth 8-3331] design trans_image has unconnected port SW[0]
+WARNING: [Synth 8-3331] design recv_image has unconnected port clk125
+WARNING: [Synth 8-3331] design recv_image has unconnected port SW[3]
+WARNING: [Synth 8-3331] design recv_image has unconnected port SW[2]
+WARNING: [Synth 8-3331] design recv_image has unconnected port SW[1]
+WARNING: [Synth 8-3331] design recv_image has unconnected port SW[0]
+WARNING: [Synth 8-3331] design Arbiter has unconnected port rst125
+WARNING: [Synth 8-3331] design TOP has unconnected port LED[6]
+WARNING: [Synth 8-3331] design TOP has unconnected port LED[5]
+WARNING: [Synth 8-3331] design TOP has unconnected port LED[4]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_A[7]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_B[7]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_B[6]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_B[5]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_B[4]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_B[3]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_B[2]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_B[1]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_B[0]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_C[7]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_C[6]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_C[5]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_C[4]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_C[3]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_C[2]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_C[1]
+WARNING: [Synth 8-3331] design TOP has unconnected port PMOD_C[0]
+WARNING: [Synth 8-3331] design TOP has unconnected port eth_mdio
+WARNING: [Synth 8-3331] design TOP has unconnected port eth_int_b
+WARNING: [Synth 8-3331] design TOP has unconnected port eth_pme_b
+WARNING: [Synth 8-3331] design TOP has unconnected port SYSCLK
+WARNING: [Synth 8-3331] design TOP has unconnected port reset_i
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/CRC_flg_reg__0' (FDSE) to 'R_Arbiter/i_0/reset_reg__0'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[62][0]' (FDSE) to 'R_Arbiter/i_0/arp/TXBUF_reg[62][1]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[61][0]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[61][2]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[63][0]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[63][1]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[59][0]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[59][7]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[18][0]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[18][3]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[16][0]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[16][1]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[63][1]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[63][3]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[60][1]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[60][2]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[59][1]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[59][7]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[18][1]' (FDSE) to 'R_Arbiter/i_0/arp/TXBUF_reg[18][2]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[16][1]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[16][2]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[62][2]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[62][3]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[61][2]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[61][3]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[60][2]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[60][3]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[59][2]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[59][7]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[16][2]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[16][4]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[62][3]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[62][4]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[61][3]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[61][4]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[63][3]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[63][4]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[60][3]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[60][4]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[59][3]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[59][7]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[18][3]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[18][4]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[62][4]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[62][5]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[61][4]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[61][5]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[63][4]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[63][5]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[60][4]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[60][5]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[59][4]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[59][7]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[18][4]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[18][5]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[16][4]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[16][5]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[62][5]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[62][6]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[61][5]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[61][6]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[63][5]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[63][6]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[60][5]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[60][6]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[59][5]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[59][7]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[18][5]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[18][6]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[16][5]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[16][6]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[62][6]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[62][7]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[61][6]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[61][7]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[63][6]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[63][7]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[60][6]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[60][7]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[59][6]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[59][7]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[18][6]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[18][7]'
+INFO: [Synth 8-3886] merging instance 'R_Arbiter/i_0/arp/TXBUF_reg[16][6]' (FDRE) to 'R_Arbiter/i_0/arp/TXBUF_reg[16][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (R_Arbiter/i_0/arp/\TXBUF_reg[62][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (R_Arbiter/i_0/arp/\TXBUF_reg[61][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (R_Arbiter/i_0/arp/\TXBUF_reg[63][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (R_Arbiter/i_0/arp/\TXBUF_reg[60][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (R_Arbiter/i_0/arp/\TXBUF_reg[59][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (R_Arbiter/i_0/arp/\TXBUF_reg[18][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (R_Arbiter/i_0/arp/\TXBUF_reg[16][7] )
+WARNING: [Synth 8-3332] Sequential element (TXBUF_reg[63][7]) is unused and will be removed from module ARP.
+WARNING: [Synth 8-3332] Sequential element (TXBUF_reg[62][7]) is unused and will be removed from module ARP.
+WARNING: [Synth 8-3332] Sequential element (TXBUF_reg[61][7]) is unused and will be removed from module ARP.
+WARNING: [Synth 8-3332] Sequential element (TXBUF_reg[60][7]) is unused and will be removed from module ARP.
+WARNING: [Synth 8-3332] Sequential element (TXBUF_reg[59][7]) is unused and will be removed from module ARP.
+WARNING: [Synth 8-3332] Sequential element (TXBUF_reg[18][7]) is unused and will be removed from module ARP.
+WARNING: [Synth 8-3332] Sequential element (TXBUF_reg[16][7]) is unused and will be removed from module ARP.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/T_Arbiter/\q_din_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (rxctl_hi_o_reg) is unused and will be removed from module RGMII2GMII.
+WARNING: [Synth 8-3332] Sequential element (rxctl_lo_o_reg) is unused and will be removed from module RGMII2GMII.
+WARNING: [Synth 8-3332] Sequential element (sft_reg[7]) is unused and will be removed from module RSTGEN.
+WARNING: [Synth 8-3332] Sequential element (sft_reg[6]) is unused and will be removed from module RSTGEN.
+WARNING: [Synth 8-3332] Sequential element (sft_reg[5]) is unused and will be removed from module RSTGEN.
+WARNING: [Synth 8-3332] Sequential element (sft_reg[4]) is unused and will be removed from module RSTGEN.
+WARNING: [Synth 8-3332] Sequential element (sft_reg[3]) is unused and will be removed from module RSTGEN.
+WARNING: [Synth 8-3332] Sequential element (sft_reg[2]) is unused and will be removed from module RSTGEN.
+WARNING: [Synth 8-3332] Sequential element (sft_reg[1]) is unused and will be removed from module RSTGEN.
+WARNING: [Synth 8-3332] Sequential element (sft_reg[0]) is unused and will be removed from module RSTGEN.
+WARNING: [Synth 8-3332] Sequential element (q_din_reg[9]) is unused and will be removed from module T_Arbiter.
+WARNING: [Synth 8-3332] Sequential element (wr_en_reg) is unused and will be removed from module T_Arbiter.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (checksum/\buffer_reg[16] )
+WARNING: [Synth 8-3332] Sequential element (buffer_reg[16]) is unused and will be removed from module checksum__1.
+INFO: [Synth 8-5544] ROM "TXBUF1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'packet_cnt_reg[8:0]' into 'packet_cnt_reg[8:0]' [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/recv_image.sv:241]
+DSP Report: Generating DSP addra0, operation Mode is: (A:0x3e8)*B2.
+DSP Report: register packet_cnt_reg is absorbed into DSP addra0.
+DSP Report: operator addra0 is absorbed into DSP addra0.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (recv_checksum/\buffer_reg[16] )
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[8][0]' (FDRE) to 'VBUF_reg[8][1]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[8][1]' (FDRE) to 'VBUF_reg[8][2]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[8][2]' (FDRE) to 'VBUF_reg[8][3]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[8][3]' (FDRE) to 'VBUF_reg[8][4]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[8][4]' (FDRE) to 'VBUF_reg[8][5]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[8][5]' (FDRE) to 'VBUF_reg[8][6]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[8][6]' (FDRE) to 'VBUF_reg[8][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\VBUF_reg[8][7] )
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[9][0]' (FDSE) to 'VBUF_reg[9][4]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[9][1]' (FDRE) to 'VBUF_reg[9][2]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[9][2]' (FDRE) to 'VBUF_reg[9][3]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[9][3]' (FDRE) to 'VBUF_reg[9][5]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[9][5]' (FDRE) to 'VBUF_reg[9][6]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[9][6]' (FDRE) to 'VBUF_reg[9][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\VBUF_reg[9][7] )
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[16][0]' (FDSE) to 'VBUF_reg[16][1]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[16][2]' (FDRE) to 'VBUF_reg[16][3]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[16][3]' (FDRE) to 'VBUF_reg[16][4]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[16][4]' (FDRE) to 'VBUF_reg[16][5]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[16][5]' (FDRE) to 'VBUF_reg[16][6]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[16][6]' (FDRE) to 'VBUF_reg[16][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\VBUF_reg[16][7] )
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[17][0]' (FDRE) to 'VBUF_reg[17][1]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[17][1]' (FDRE) to 'VBUF_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[17][2]' (FDRE) to 'VBUF_reg[17][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\VBUF_reg[17][3] )
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[17][4]' (FDSE) to 'VBUF_reg[17][5]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[17][5]' (FDSE) to 'VBUF_reg[17][6]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[17][6]' (FDSE) to 'VBUF_reg[17][7]'
+WARNING: [Synth 8-3332] Sequential element (buffer_reg[16]) is unused and will be removed from module checksum__2.
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][0]' (FD) to 'data_pipe_reg[17][1]'
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][1]' (FD) to 'data_pipe_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][2]' (FD) to 'data_pipe_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][3]' (FD) to 'data_pipe_reg[17][4]'
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][4]' (FD) to 'data_pipe_reg[17][5]'
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][5]' (FD) to 'data_pipe_reg[17][6]'
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][6]' (FD) to 'data_pipe_reg[17][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\data_pipe_reg[17][7] )
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+DSP Report: Generating DSP addr_r_reg, operation Mode is: (C+(A:0x3e8)*B)'.
+DSP Report: register addr_r_reg is absorbed into DSP addr_r_reg.
+DSP Report: operator addr_r0 is absorbed into DSP addr_r_reg.
+DSP Report: operator addr_r1 is absorbed into DSP addr_r_reg.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (trans_checksum/\buffer_reg[16] )
+WARNING: [Synth 8-3332] Sequential element (buffer_reg[16]) is unused and will be removed from module checksum.
+INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[39][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[39][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[39][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[39][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[39][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[39][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[39][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[39][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[23][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[23][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[23][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[23][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[23][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[23][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[23][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[23][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[22][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[22][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[22][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[22][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[22][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[22][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[22][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[22][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[21][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[21][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[21][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[21][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[21][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[21][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[21][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[21][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[20][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[20][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[20][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[20][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[20][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[20][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[20][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[20][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[19][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[19][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[19][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[19][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[19][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[19][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[19][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[19][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[18][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[18][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[18][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[18][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[18][4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[18][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[18][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[18][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[14][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[14][1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[14][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[14][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[14][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[14][5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[14][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[14][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[12][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[12][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[12][2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[12][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[12][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[12][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[12][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[12][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[1042][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[1042][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[1042][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[1042][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[1042][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[1042][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[1042][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[1042][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[1043][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\TXBUF_reg[1043][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[1043][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\TXBUF_reg[1043][3] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][0]' (FD) to 'data_pipe_reg[17][1]'
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][1]' (FD) to 'data_pipe_reg[17][2]'
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][2]' (FD) to 'data_pipe_reg[17][3]'
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][3]' (FD) to 'data_pipe_reg[17][4]'
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][4]' (FD) to 'data_pipe_reg[17][5]'
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][5]' (FD) to 'data_pipe_reg[17][6]'
+INFO: [Synth 8-3886] merging instance 'data_pipe_reg[17][6]' (FD) to 'data_pipe_reg[17][7]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[19][0]' (FDRE) to 'VBUF_reg[19][7]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[19][1]' (FDRE) to 'VBUF_reg[19][7]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[19][2]' (FDRE) to 'VBUF_reg[19][7]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[19][3]' (FDRE) to 'VBUF_reg[19][7]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[19][4]' (FDRE) to 'VBUF_reg[19][7]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[19][5]' (FDRE) to 'VBUF_reg[19][7]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[19][6]' (FDRE) to 'VBUF_reg[19][7]'
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "p_2_out0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[9][0]' (FDSE) to 'VBUF_reg[9][4]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[9][1]' (FDRE) to 'VBUF_reg[9][2]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[9][2]' (FDRE) to 'VBUF_reg[9][3]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[9][3]' (FDRE) to 'VBUF_reg[9][5]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[9][5]' (FDRE) to 'VBUF_reg[9][6]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[9][6]' (FDRE) to 'VBUF_reg[9][7]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[16][0]' (FDSE) to 'VBUF_reg[16][1]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[16][2]' (FDRE) to 'VBUF_reg[16][3]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[16][3]' (FDRE) to 'VBUF_reg[16][4]'
+INFO: [Synth 8-3886] merging instance 'VBUF_reg[16][4]' (FDRE) to 'VBUF_reg[16][5]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:08:48 ; elapsed = 00:09:29 . Memory (MB): peak = 2947.051 ; gain = 1664.039 ; free physical = 50974 ; free virtual = 120348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|recv_image__GB0 | (A:0x3e8)*B2     | 9      | 10     | -      | -      | 19     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|recv_image      | (C+(A:0x3e8)*B)' | 9      | 10     | 10     | -      | 18     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++----------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |ping__GB0         |           1|      2296|
+|2     |ping__GB1         |           1|      5755|
+|3     |ping__GB2         |           1|       283|
+|4     |ping__GB3         |           1|       683|
+|5     |ping__GB4         |           1|      1653|
+|6     |ping__GB5         |           1|      1648|
+|7     |ping__GB6         |           1|      2122|
+|8     |ping__GB7         |           1|      2531|
+|9     |ping__GB8         |           1|      2301|
+|10    |ping__GB9         |           1|       613|
+|11    |ping__GB10        |           1|     10777|
+|12    |ping__GB11        |           1|      1839|
+|13    |recv_image__GB0   |           1|      3443|
+|14    |recv_image__GB1   |           1|      1008|
+|15    |recv_image__GB2   |           1|      1008|
+|16    |recv_image__GB3   |           1|      1512|
+|17    |recv_image__GB4   |           1|      2016|
+|18    |recv_image__GB5   |           1|      2876|
+|19    |recv_image__GB6   |           1|      3567|
+|20    |recv_image__GB7   |           1|      1024|
+|21    |recv_image__GB8   |           1|      5288|
+|22    |recv_image__GB9   |           1|     11991|
+|23    |recv_image__GB10  |           1|      1649|
+|24    |recv_image__GB11  |           1|      1025|
+|25    |recv_image__GB12  |           1|       698|
+|26    |trans_image__GB0  |           1|      2969|
+|27    |trans_image__GB1  |           1|      1008|
+|28    |trans_image__GB2  |           1|      1008|
+|29    |trans_image__GB3  |           1|      1512|
+|30    |trans_image__GB4  |           1|      2048|
+|31    |trans_image__GB5  |           1|     17983|
+|32    |trans_image__GB6  |           1|      1823|
+|33    |trans_image__GB7  |           1|      2361|
+|34    |trans_image__GB8  |           1|       675|
+|35    |trans_image__GB9  |           1|      1008|
+|36    |trans_image__GB10 |           1|      1008|
+|37    |trans_image__GB11 |           1|      1536|
+|38    |trans_image__GB12 |           1|      2048|
+|39    |trans_image__GB13 |           1|      2711|
+|40    |trans_image__GB14 |           1|      1024|
+|41    |trans_image__GB15 |           1|      1024|
+|42    |trans_image__GB16 |           1|      1024|
+|43    |trans_image__GB17 |           1|      1589|
+|44    |trans_image__GB18 |           1|      9512|
+|45    |Arbiter__GC0      |           1|      2513|
+|46    |TOP__GC0          |           1|       593|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'eth_clkgen/rxck_0deg' to pin 'eth_clkgen/bbstub_rxck_0deg/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'eth_clkgen/rxck_180deg' to pin 'eth_clkgen/bbstub_rxck_180deg/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'eth_clkgen/rxck_90deg' to pin 'eth_clkgen/bbstub_rxck_90deg/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:59 ; elapsed = 00:09:45 . Memory (MB): peak = 2947.051 ; gain = 1664.039 ; free physical = 50717 ; free virtual = 120204
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:09:58 ; elapsed = 00:10:46 . Memory (MB): peak = 2947.051 ; gain = 1664.039 ; free physical = 50422 ; free virtual = 119920
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |ping__GB1         |           1|      5750|
+|2     |ping__GB3         |           1|       683|
+|3     |ping__GB5         |           1|      1648|
+|4     |ping__GB6         |           1|      2122|
+|5     |ping__GB7         |           1|      2531|
+|6     |ping__GB9         |           1|       611|
+|7     |ping__GB11        |           1|      1839|
+|8     |recv_image__GB0   |           1|      3444|
+|9     |recv_image__GB1   |           1|      1008|
+|10    |recv_image__GB2   |           1|      1008|
+|11    |recv_image__GB3   |           1|      1512|
+|12    |recv_image__GB4   |           1|      2016|
+|13    |recv_image__GB5   |           1|      2876|
+|14    |recv_image__GB6   |           1|      3567|
+|15    |recv_image__GB7   |           1|      1024|
+|16    |recv_image__GB8   |           1|      5288|
+|17    |recv_image__GB9   |           1|     11991|
+|18    |recv_image__GB10  |           1|      1649|
+|19    |recv_image__GB11  |           1|      1025|
+|20    |recv_image__GB12  |           1|       698|
+|21    |trans_image__GB0  |           1|      2896|
+|22    |trans_image__GB1  |           1|      1008|
+|23    |trans_image__GB2  |           1|      1008|
+|24    |trans_image__GB3  |           1|      1512|
+|25    |trans_image__GB4  |           1|      2048|
+|26    |trans_image__GB5  |           1|     17983|
+|27    |trans_image__GB6  |           1|      1823|
+|28    |trans_image__GB7  |           1|       105|
+|29    |trans_image__GB13 |           1|      2689|
+|30    |trans_image__GB14 |           1|      1024|
+|31    |trans_image__GB15 |           1|      1024|
+|32    |trans_image__GB16 |           1|      1024|
+|33    |trans_image__GB17 |           1|      1586|
+|34    |trans_image__GB18 |           1|      9507|
+|35    |Arbiter__GC0      |           1|      2513|
+|36    |TOP__GC0          |           1|       593|
+|37    |ping_GT0          |           1|     16142|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:10:28 ; elapsed = 00:11:15 . Memory (MB): peak = 2947.051 ; gain = 1664.039 ; free physical = 49751 ; free virtual = 119268
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |ping__GB1         |           1|      2667|
+|2     |ping__GB3         |           1|       344|
+|3     |ping__GB5         |           1|       698|
+|4     |ping__GB6         |           1|       942|
+|5     |ping__GB7         |           1|      1110|
+|6     |ping__GB9         |           1|       271|
+|7     |ping__GB11        |           1|       955|
+|8     |recv_image__GB0   |           1|      1636|
+|9     |recv_image__GB1   |           1|       464|
+|10    |recv_image__GB2   |           1|       464|
+|11    |recv_image__GB3   |           1|       696|
+|12    |recv_image__GB4   |           1|       928|
+|13    |recv_image__GB5   |           1|      1091|
+|14    |recv_image__GB6   |           1|      3026|
+|15    |recv_image__GB7   |           1|       480|
+|16    |recv_image__GB8   |           1|      4744|
+|17    |recv_image__GB9   |           1|     10721|
+|18    |recv_image__GB10  |           1|       833|
+|19    |recv_image__GB11  |           1|       481|
+|20    |recv_image__GB12  |           1|       324|
+|21    |trans_image__GB0  |           1|      1388|
+|22    |trans_image__GB1  |           1|       464|
+|23    |trans_image__GB2  |           1|       464|
+|24    |trans_image__GB3  |           1|       696|
+|25    |trans_image__GB4  |           1|       960|
+|26    |trans_image__GB5  |           1|     17409|
+|27    |trans_image__GB6  |           1|       924|
+|28    |trans_image__GB7  |           1|        44|
+|29    |trans_image__GB13 |           1|      1510|
+|30    |trans_image__GB14 |           1|       480|
+|31    |trans_image__GB15 |           1|       480|
+|32    |trans_image__GB16 |           1|       480|
+|33    |trans_image__GB17 |           1|       739|
+|34    |trans_image__GB18 |           1|      8419|
+|35    |Arbiter__GC0      |           1|      1274|
+|36    |TOP__GC0          |           1|       328|
+|37    |ping_GT0          |           1|      7460|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin d_csum_cnt_inferred:in0[10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin d_csum_cnt_inferred:in0[9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin d_csum_cnt_inferred:in0[8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin d_csum_cnt_inferred:in0[7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin d_csum_cnt_inferred:in0[6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin d_csum_cnt_inferred:in0[5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin d_csum_cnt_inferred:in0[4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin d_csum_cnt_inferred:in0[3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin d_csum_cnt_inferred:in0[2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin d_csum_cnt_inferred:in0[1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin d_csum_cnt_inferred:in0[0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin csum_ok_inferred:in0 to constant 0
+CRITICAL WARNING: [Synth 8-6030] Inout pin 'ETH_RST_B' is read and/or written without using tristate logic. Proper direction of connection may be wrongly inferred. Please use specific direction to avoid any incorrect logic issue [/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.srcs/sources_1/TOP.sv:22]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:10:41 ; elapsed = 00:11:29 . Memory (MB): peak = 2947.051 ; gain = 1664.039 ; free physical = 49810 ; free virtual = 119437
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:10:42 ; elapsed = 00:11:29 . Memory (MB): peak = 2947.051 ; gain = 1664.039 ; free physical = 49811 ; free virtual = 119437
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:10:50 ; elapsed = 00:11:37 . Memory (MB): peak = 2947.051 ; gain = 1664.039 ; free physical = 49814 ; free virtual = 119441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|trans_image | d_img_cnt_reg[2][9] | 3      | 10    | NO           | NO                 | YES               | 10     | 0       | 
++------------+---------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |image_RAM     |         1|
+|2     |queue         |         1|
+|3     |ETH_CLKGEN    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |ETH_CLKGEN |     1|
+|2     |image_RAM  |     1|
+|3     |queue      |     1|
+|4     |CARRY4     |    59|
+|5     |DSP48E1    |     1|
+|6     |DSP48E1_1  |     1|
+|7     |IDDR       |     5|
+|8     |LUT1       |   247|
+|9     |LUT2       |   820|
+|10    |LUT3       |  1118|
+|11    |LUT4       |  1559|
+|12    |LUT5       |  2135|
+|13    |LUT6       | 16901|
+|14    |MUXF7      |  4574|
+|15    |MUXF8      |  2099|
+|16    |ODDR       |     6|
+|17    |SRL16E     |    10|
+|18    |FDPE       |     8|
+|19    |FDRE       | 44870|
+|20    |FDSE       |  2123|
+|21    |LD         |    11|
+|22    |IBUF       |    16|
+|23    |OBUF       |    21|
+|24    |OBUFT      |    21|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------+------------+------+
+|      |Instance             |Module      |Cells |
++------+---------------------+------------+------+
+|1     |top                  |            | 76658|
+|2     |  R_Arbiter          |Arbiter     | 76272|
+|3     |    ping             |ping        | 14450|
+|4     |      checksum       |checksum__1 |    96|
+|5     |    recv_image       |recv_image  | 25977|
+|6     |      recv_checksum  |checksum__2 |    96|
+|7     |    trans_image      |trans_image | 34494|
+|8     |      trans_checksum |checksum    |    96|
+|9     |    crc_ge           |CRC_ge__1   |    75|
+|10    |    arp              |ARP         |   499|
+|11    |  rgmii2gmii         |RGMII2GMII  |    15|
+|12    |  gmii2rgmii         |GMII2RGMII  |     6|
+|13    |  rstgen125          |RSTGEN__1   |     9|
+|14    |  T_Arbiter          |T_Arbiter   |   294|
+|15    |    T_crc_ge         |CRC_ge      |    75|
++------+---------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:10:50 ; elapsed = 00:11:37 . Memory (MB): peak = 2947.051 ; gain = 1664.039 ; free physical = 49814 ; free virtual = 119441
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 127 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:10:10 ; elapsed = 00:10:55 . Memory (MB): peak = 2947.051 ; gain = 1274.586 ; free physical = 53078 ; free virtual = 122705
+Synthesis Optimization Complete : Time (s): cpu = 00:10:51 ; elapsed = 00:11:41 . Memory (MB): peak = 2947.051 ; gain = 1664.039 ; free physical = 53115 ; free virtual = 122706
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6772 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  LD => LDCE: 11 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+626 Infos, 296 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:11:03 ; elapsed = 00:11:53 . Memory (MB): peak = 2971.062 ; gain = 1723.516 ; free physical = 53240 ; free virtual = 122829
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint '/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/synth_2/TOP.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2995.074 ; gain = 24.012 ; free physical = 53236 ; free virtual = 122832
+INFO: [runtcl-4] Executing : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.64 . Memory (MB): peak = 2995.074 ; gain = 0.000 ; free physical = 53235 ; free virtual = 122830
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 11 13:33:14 2019...

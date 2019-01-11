@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/moikawa/proj_Mitsuhashi/UDP_20181221/UDP.runs/ETH_CLKGEN_synth_1'
+HD_PWD='/home/moikawa/proj_Mitsuhashi/NexysVideo_UdpTest/UDP.runs/ETH_CLKGEN_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
