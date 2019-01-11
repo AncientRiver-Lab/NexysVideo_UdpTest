@@ -1,3 +1,0 @@
-NumberHits:6
-Timestamp: Fri Nov 02 07:40:00 UTC 2018
-VLNV: xilinx.com:ip:ila:6.2

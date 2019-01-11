@@ -1,3 +1,0 @@
-NumberHits:78
-Timestamp: Tue Dec 25 08:11:14 UTC 2018
-VLNV: xilinx.com:ip:xsdbm:3.0

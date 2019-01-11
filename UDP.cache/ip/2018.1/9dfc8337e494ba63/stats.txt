@@ -1,3 +1,0 @@
-NumberHits:8
-Timestamp: Tue Aug 21 11:35:26 UTC 2018
-VLNV: xilinx.com:ip:ila:6.2
