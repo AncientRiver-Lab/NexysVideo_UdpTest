@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="image_queue_synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1537949712">
-  <File Type="RDS-UTIL-PB" Name="image_queue_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="image_queue_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="image_queue_utilization_synth.pb"/>
   <File Type="RDS-RDS" Name="image_queue.vds"/>
   <File Type="RDS-DCP" Name="image_queue.dcp"/>
   <File Type="PA-TCL" Name="image_queue.tcl"/>

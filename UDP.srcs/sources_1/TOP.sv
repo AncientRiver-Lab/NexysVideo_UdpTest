@@ -25,6 +25,8 @@ module TOP(
     input 	     ETH_RXCTL, // 受信フレーム検知で'1'
     
     input 	     BTN_C, // 任意のタイミングでのリセット   
+    input 	     BTN_D, //
+    input        BTN_R,
             
     output [3:0] ETH_TXD, //-- Ether RGMII Tx data.
     output       ETH_TXCK,
@@ -122,6 +124,8 @@ module TOP(
     wire [8:0] UDP_btn_d;   // ボタン入力によるUDP送信
     wire [8:0] UDP_o;       // UDPの送受信
     
+   wire [7:0]  ping_st_count;
+   
     Arbiter R_Arbiter (
         /*---INPUT---*/
         .gmii_rxd     (gmii_rxd),   //<-- "rgmii2gmii"
@@ -135,9 +139,11 @@ module TOP(
         /*---OUTPUT---*/
         .rarp_o       (rarp_o),
         .ping_o       (ping_o),
-        .UDP_o        (UDP_o)
+        .UDP_o        (UDP_o),
+        /*---DEBUG---*/
+        .ping_st_count_o(ping_st_count)
     );
-    wire [7:0] tx_led;
+    wire [7:0] txend_count;
     T_Arbiter T_Arbiter(
         .rarp_i       (rarp_o),
         .ping_i       (ping_o),
@@ -151,7 +157,7 @@ module TOP(
         .txd_o        (gmii_txd),
         .gmii_txctl_o (gmii_txctl),
         //.LED(LED)
-        .LED          (tx_led)
+        .txend_count_o (txend_count)
     );
     
 //    always_comb begin
@@ -206,9 +212,9 @@ module TOP(
    assign eth_mdio  = 1'bz;
    assign eth_mdc   = 1'b1;
    
-   assign LED[3:0] = tx_led[3:0];
-   assign LED[8] = sys_clkgen_locked;
-   assign LED[7] = eth_clkgen_locked;
+   assign LED = (BTN_D)? ping_st_count :
+                (BTN_R)? txend_count :
+		                 {6'b0, sys_clkgen_locked, eth_clkgen_locked};
 
    assign PMOD_A[0] = CPU_RSTN;
    assign PMOD_A[1] = sys_clkgen_locked;

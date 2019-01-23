@@ -33,7 +33,7 @@ module T_Arbiter(
     output reg [7:0] txd_o,
     output reg gmii_txctl_o,
    
-    output reg [7:0] LED
+    output reg [7:0] txend_count_o
     );
     
 parameter Idle     =  4'h0;   // 待機状態
@@ -43,7 +43,7 @@ parameter TxData   =  4'h4;   // データ送信
 parameter TxEnd    =  4'h8;   // 送信終了
     
     /* ステートマシン */
-    wire tx_any = (rarp_i[8] || ping_i[8] || UDP_i[8]);
+   
     reg [3:0] st, nx;
     reg [2:0] fcs_cnt;
     wire      tx_end = (st==TxData && fcs_cnt==3'd4);
@@ -58,6 +58,13 @@ parameter TxEnd    =  4'h8;   // 送信終了
     wire [11:0]  q_dout;
     reg [1:0] stby_cyc;
     reg [10:0] txdata_cyc;
+    
+    wire rarp_first, rarp_last;
+    wire ping_first, ping_last;
+    
+     //wire tx_any = (rarp_first || ping_first || UDP_i[8]);
+     wire tx_any = (rarp_first || ping_first);
+    
     always_comb begin
         nx = st;
         case(st)
@@ -86,11 +93,11 @@ parameter TxEnd    =  4'h8;   // 送信終了
        rarp_d <= rarp_i;
        ping_d <= ping_i;
     end
-    wire rarp_first = ({rarp_d[8],rarp_i[8]}==2'b01); //-- rise edge
-    wire rarp_last  = ({rarp_d[8],rarp_i[8]}==2'b10); //-- fall edge
+    assign rarp_first = ({rarp_d[8],rarp_i[8]}==2'b01); //-- rise edge
+    assign rarp_last  = ({rarp_d[8],rarp_i[8]}==2'b10); //-- fall edge
     
-    wire ping_first = ({ping_d[8],ping_i[8]}==2'b01); //-- rise edge
-    wire ping_last  = ({ping_d[8],ping_i[8]}==2'b10); //-- fall edge
+    assign ping_first = ({ping_d[8],ping_i[8]}==2'b01); //-- rise edge
+    assign ping_last  = ({ping_d[8],ping_i[8]}==2'b10); //-- fall edge
     
     /*-----Queue-----*/
     reg  [11:0]  q_din;
@@ -307,9 +314,8 @@ parameter TxEnd    =  4'h8;   // 送信終了
 //    end
     
     always_ff @(posedge eth_rxck)begin
-        if(st==TxEnd)begin
-            LED <= LED + 1'd1;
-        end
+        if(rst) txend_count_o <= 8'd0;
+        else if(st==TxEnd) txend_count_o <= txend_count_o + 8'd1;
     end
     
 endmodule

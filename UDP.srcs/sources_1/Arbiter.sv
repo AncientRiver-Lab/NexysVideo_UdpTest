@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Mitsuhashi
 // 
 // Create Date: 2018/06/26 17:43:14
 // Design Name: 
@@ -33,8 +33,9 @@ module Arbiter(
     
     output [8:0]          rarp_o,
     output [8:0]          ping_o,
-    output [8:0]          UDP_o
+    output [8:0]          UDP_o,
     //output reg [7:0]      LED
+    output [7:0]          ping_st_count_o
     );
     
 parameter  Idle    = 4'h1;
@@ -93,7 +94,10 @@ parameter  RxEnd   = 4'h4;
     wire [31:0] rx_arp_dstIP = {RXBUF[38],RXBUF[39],RXBUF[40],RXBUF[41]};
     wire [31:0] rx_ip4_dstIP = {RXBUF[30],RXBUF[31],RXBUF[32],RXBUF[33]};
 
-    wire is_arp = (rx_FTYPE==`FTYPE_ARP); //-- moikawa add.
+    wire is_arp  = (rx_FTYPE==`FTYPE_ARP); //-- moikawa add.
+    wire is_ipv4 = (rx_FTYPE==`FTYPE_IPV4); //-- moikawa add.
+    wire is_icmp = ({RXBUF[34],RXBUF[35]}==`PING_REQ);
+    
     wire dstmac_is_bcast = (rx_dstMAC == `bcast_MAC); //-- dest MAC address is broadcast.
     wire dstmac_is_me    = (rx_dstMAC == my_MACadd);  //-- dest MAC address is me.
     
@@ -195,21 +199,21 @@ parameter  RxEnd   = 4'h4;
     end
      
     /*---パケットの種類振り分け---*/
-    (*dont_touch="true"*)reg [2:0] arp_st;       // ARP Packet
+    (*dont_touch="true"*)reg arp_st;       // ARP Packet
     (*dont_touch="true"*)reg ping_st;      // ICMP Echo Packet(ping)
-    (*dont_touch="true"*)reg [2:0] UDP_st;       // UDP Packet
+    (*dont_touch="true"*)reg UDP_st;       // UDP Packet
     (*dont_touch="true"*)reg [2:0] els_packet;   // else Packet
     always_ff @(posedge eth_rxck)begin
         if(crc_ok)begin
-            if((dstmac_is_bcast ||dstmac_is_me) && is_arp && rx_arp_dstIP==my_IPadd) arp_st <= 3'b111;  // add 2018.12.5
-            else if(dstmac_is_me && RXBUF[23]==8'h01 && rx_ip4_dstIP==my_IPadd) ping_st <= `HI; // add 2018.12.11
-            else if(dstmac_is_me && RXBUF[23]==8'h11 && rx_ip4_dstIP==my_IPadd) UDP_st  <= 3'h7; // add 2018.12.5
+            if((dstmac_is_bcast ||dstmac_is_me) && is_arp && rx_arp_dstIP==my_IPadd) arp_st <= `HI;  // add 2018.12.5
+            else if(dstmac_is_me && is_ipv4 && is_icmp && RXBUF[23]==8'h01 && rx_ip4_dstIP==my_IPadd) ping_st <= `HI; // add 2018.12.11
+            else if(dstmac_is_me && is_ipv4 && RXBUF[23]==8'h11 && rx_ip4_dstIP==my_IPadd) UDP_st  <= `HI; // add 2018.12.5
             else els_packet <= 3'h7;
         end
         else begin
-            arp_st  <= {arp_st[1:0], `LO};
+            arp_st  <= `LO;
             ping_st <= `LO;
-            UDP_st  <= {UDP_st[1:0], `LO};
+            UDP_st  <= `LO;
             els_packet <= {els_packet[1:0], `LO};
         end
     end
@@ -218,7 +222,7 @@ parameter  RxEnd   = 4'h4;
         /*---INPUT---*/
         .eth_rxck     (eth_rxck),
         .rst_rx       (rst_rx),
-        .start_i      (arp_st[2]),
+        .start_i      (arp_st),
         .myMAC_i      (my_MACadd),  //<---  add 2018.12.5
         .myIP_i       (my_IPadd),    //--->
         .DstMAC_i     (DstMAC),
@@ -231,13 +235,13 @@ parameter  RxEnd   = 4'h4;
         .eth_rxck     (eth_rxck),
         .rst_rx       (rst_rx),
         .rxd_i        ({q_rxctl[0], q_rxd[0]}),
-        .arp_st(arp_st[2]),
+        .arp_st       (arp_st),
         .ping_st      (ping_st),
         .my_MAC_i     (my_MACadd),
         .my_IP_i      (my_IPadd),
-        //.DstMAC(DstMAC),
-        //.DstIP(DstIP),
-        .ping_o       (ping_o)
+        .ping_o       (ping_o),
+        /*---Debug---*/
+        .ping_st_count_o(ping_st_count_o)
     );
     /*
     UDP_reply UDP_reply(
@@ -245,7 +249,7 @@ parameter  RxEnd   = 4'h4;
         .rst_rx(rst_rx),
         .RXBUF(RXBUF),
         .rx_cnt(rx_cnt),
-        .UDP_st(UDP_st[2]),
+        .UDP_st(UDP_st),
         .UDP_tx(UDP_tx),
         .UDP_d(UDP_o)
     );
@@ -271,9 +275,9 @@ parameter  RxEnd   = 4'h4;
         .rxd(q_rxd[0]),
         //.RXBUF(RXBUF),
         .rx_cnt(rx_cnt),
-        .arp_st(arp_st[0]),
+        .arp_st(arp_st),
         .ping_st(ping_st),
-        .UDP_st(UDP_st[2]),
+        .UDP_st(UDP_st),
         .els_packet(els_packet[0]),
         .addrb(addr),
         .addr_cnt(addr_cnt),

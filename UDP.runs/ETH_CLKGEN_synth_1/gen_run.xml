@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="ETH_CLKGEN_synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1547180363">
-  <File Type="VDS-TIMING-PB" Name="ETH_CLKGEN_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ETH_CLKGEN_timing_summary_synth.rpt"/>
+  <File Type="PA-TCL" Name="ETH_CLKGEN.tcl"/>
+  <File Type="REPORTS-TCL" Name="ETH_CLKGEN_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ETH_CLKGEN.vds"/>
   <File Type="RDS-DCP" Name="ETH_CLKGEN.dcp"/>
   <File Type="RDS-UTIL-PB" Name="ETH_CLKGEN_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="ETH_CLKGEN_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="ETH_CLKGEN_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="ETH_CLKGEN.vds"/>
-  <File Type="REPORTS-TCL" Name="ETH_CLKGEN_reports.tcl"/>
-  <File Type="PA-TCL" Name="ETH_CLKGEN.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ETH_CLKGEN">
     <File Path="$PSRCDIR/sources_1/ip/ETH_CLKGEN/ETH_CLKGEN.xci">
       <FileInfo>

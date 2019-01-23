@@ -31,4 +31,5 @@
 `define   FTYPE_IPV4 16'h08_00
 `define   OPR_ARP    16'h00_01
 
+`define   PING_REQ   16'h08_00
 `define   PING_REPLY 16'h00_00

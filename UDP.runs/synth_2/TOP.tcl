@@ -17,7 +17,6 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
-set_param tcl.collectionResultDisplayLimit 0
 create_project -in_memory -part xc7a200tsbg484-1
 
 set_param project.singleFileAddWarning.threshold 0

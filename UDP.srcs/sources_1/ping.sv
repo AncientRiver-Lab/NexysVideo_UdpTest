@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: Kochi Univ.
+// Engineer: T.Mitsuhashi
 // 
 // Create Date: 2018/07/25 15:50:07
 // Design Name: 
@@ -21,16 +21,17 @@
 
 module ping(
     /*---I/O---*/
-    input           eth_rxck,
-    //input           clk125;
-    input           rst_rx,
-    input [8:0]     rxd_i,
-    input           arp_st,
-    input           ping_st,
-    input [47:0]    my_MAC_i,
-    input [31:0]    my_IP_i,
+    input 	     eth_rxck,
+    input 	     rst_rx,    //-- reset
+    input [8:0]      rxd_i,
+    input 	     arp_st,
+    input 	     ping_st,
+    input [47:0]     my_MAC_i,
+    input [31:0]     my_IP_i,
 
-    output reg [8:0] ping_o
+    output reg [8:0] ping_o,
+    /*--- For debug --- */
+    output reg [7:0] ping_st_count_o
     );
     
     /*---parameter---*/
@@ -100,9 +101,9 @@ module ping(
             Idle : if(rxd_i[8]) nx = Stby;
             Stby : begin                                //-- Wait for SFD byte.
                 if(rxd_i[8]) begin
-                    if(rxd_i[7:0]==`SFD) nx = Presv;
-                    else if(rxd_i[7:0]==`PREAMB) nx = Stby;
-                    else nx=Idle;
+                    if(rxd_i[7:0]==`SFD) nx = Presv;         //-- Preamble ends.
+                    else if(rxd_i[7:0]==`PREAMB) nx = Stby;  //-- Preamble continue.
+                    else nx=Idle;                            //-- return to Idle state.
                 end 
                 else nx = Idle;
             end 
@@ -223,47 +224,6 @@ module ping(
     
     /*---Tx_Data Ready---*/
     reg [9:0] tx_cnt;
-    /*---Ready Extend---*/
-    /*
-    always_ff @(posedge eth_rxck)begin
-        if(st==Ready)begin
-            ready_cnt <= ready_cnt + 1;
-        end
-        else begin
-            ready_cnt <= 0;
-        end
-    end
-
-    reg ready_rxck;                
-    always_ff @(posedge eth_rxck)begin
-        if(ready_cnt>=1&&ready_cnt<=3)begin
-            ready_rxck <= 1;
-        end
-        else begin
-            ready_rxck <= 0;
-        end
-    end
-    */
-    
-    /*---tx_Hcend Extend---*/
-    /*
-    reg tx_hend_rxck;      
-    reg tx_iend_rxck;  
-    always_ff @(posedge eth_rxck)begin
-        if(st==Tx_HEnd) begin
-            if(err_cnt>=1&&err_cnt<=3)   tx_hend_rxck <= 1;
-            else                         tx_hend_rxck <= 0;
-        end 
-        else if(st==Tx_IEnd)begin
-            if(err_cnt>=1&&err_cnt<=3)   tx_iend_rxck <= 1;
-            else                         tx_iend_rxck <= 0;
-        end
-        else begin
-            tx_hend_rxck <= 0;
-            tx_iend_rxck <= 0;
-        end
-    end
-    */
     
     reg [15:0] csum_extend;
     always_ff @(posedge eth_rxck)begin 
@@ -309,13 +269,7 @@ module ping(
         end
         else if(st==Tx_HEnd) {TXBUF[24],TXBUF[25]} <= csum_extend;
         else if(st==Tx_IEnd) {TXBUF[36],TXBUF[37]} <= csum_extend;
-        /*
-        else if(st==Idle)begin   //-- Leave as is.
-            for(i=0;i<9'd256;i=i+1) TXBUF[i] <= 0;
-        end
-        */
-    end
-    
+    end // always_ff @
     
     /*---Header Checksum Error---*/
     always_ff @(posedge eth_rxck)begin
@@ -361,4 +315,16 @@ module ping(
         else if(st==Tx_En && fcs_cnt!=3'd4)  ping_o <= {`LO,TXBUF[tx_cnt]};
         else             ping_o <= 0;
     end  
+
+   reg [1:0] ping_st_dly;
+   always_ff @(posedge eth_rxck) begin
+      if(rst_rx) ping_st_dly <= 2'b0;
+      else       ping_st_dly <= {ping_st_dly[0], ping_st};
+   end
+
+   wire ping_st_rise = (ping_st_dly==2'b01);
+   always_ff @(posedge eth_rxck) begin
+      if(rst_rx)            ping_st_count_o <= 8'd0;
+      else if(ping_st_rise) ping_st_count_o <= ping_st_count_o + 8'd1; //-- wrap round.
+   end
 endmodule // PING
